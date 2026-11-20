@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="game-container">
+        <h1>Тапка</h1>
+        <p class="instruction">Нажимай на кнопку, зарабатывай очки и получай улучшения!</p>
+        <section class="score-section">
+            <h2>Твои очки</h2>
+            <div id="score">0</div>
+        </section>
+                <div id="achievement" class="achievement" hidden>
+            Ты в деле!
+        </div>
+        <section class="click-selection">
+            <button id="click-btn">Тапать!</button>
+        </section>
+        <section class="statistics">
+            <h2>Статистика</h2>
+            <p>Всего кликов:<span id="total-clicks">0</span></p>
+            <p>Очков в секунду:<span id="points-per-second">0</span></p>
+            <p>Сила клика:<span id="click-power">0</span></p>            
+        </section>
+        <section class="upgrade-section">
+            <h2>Улучшения</h2>
+
+            <button id="upgrade-btn" disabled>
+                Улучшить клик (10 очков)
+            </button>
+
+            <button id="auto-upgrade-btn" disabled>
+                Купить автоклик (50 очков)
+            </button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
